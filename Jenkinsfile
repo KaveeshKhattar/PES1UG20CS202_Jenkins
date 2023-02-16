@@ -10,12 +10,12 @@ pipeline{
     stage('Test'){
       steps{
         sh './task5'
+        sh 'exit 1' // error
       }
     }
    stage('Deploy'){
       steps{
         echo 'Deploying'
-        sh 'cat Kaveesh.txt' -> use for showing error
       }
     }
   }
