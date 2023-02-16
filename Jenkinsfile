@@ -15,7 +15,7 @@ pipeline{
    stage('Deploy'){
       steps{
         echo 'Deploying'
-        sh "cat Kaveesh.txt" -> error
+        sh 'cat Keerthana.txt' -> use for showing error
       }
     }
   }
